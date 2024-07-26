@@ -1,0 +1,12 @@
+<p>Estamos buscando la prenda: {{nombre}}</p>
+
+{% if prenda %}
+<ul>
+    {% for prend in prenda %}
+        <li>{{prend.nombre}}</li>
+        <li>{{prend.sexo}}</li>
+        <li>{{prend.talle}}</li>
+        <li>{{prend.color}}</li>
+    {% endfor %}
+</ul>
+{% endif %}
